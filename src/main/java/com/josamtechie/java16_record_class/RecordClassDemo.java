@@ -4,54 +4,9 @@ import java.util.Objects;
 
 record Person(int age, String name){}
 
-/*class Person
-{
- private int age;
- private String name;
-
-    public Person(int age, String name)
-    {
-        this.age = age;
-        this.name = name;
-    }
-
-    public int getAge()
-    {
-        return age;
-    }
-
-    public String getName()
-    {
-        return name;
-    }
-
-    @Override
-    public String toString()
-    {
-        return "Person{" +
-                "age=" + age +
-                ", name='" + name + '\'' +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o)
-    {
-        if (!(o instanceof Person person)) return false;
-        return getAge() == person.getAge() && Objects.equals(getName(), person.getName());
-    }
-
-    @Override
-    public int hashCode()
-    {
-        return Objects.hash(getAge(), getName());
-    }
-}*/
-
-
-
 //What is a Record in Java?
-// A record is a special class in Java introduced to reduce boilerplate code for immutable data carriers (POJOs or DTOs).
+// A record is a special class in Java introduced to reduce boilerplate code
+// for immutable data carriers (POJOs or DTOs).
 public class RecordClassDemo
 {
     public static void main(String[] args)
