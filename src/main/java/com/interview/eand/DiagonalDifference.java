@@ -25,8 +25,8 @@ public class DiagonalDifference {
         int rightToLeftDiagonal = 0;
 
         for (int i = 0; i < n; i++) {
-            leftToRightDiagonal += matrix[i][i];
-            rightToLeftDiagonal += matrix[i][n - 1 - i];
+            leftToRightDiagonal += matrix[i][i]; // [0][0] = 1, [1][1] = 5, [2][2] = 9 Total = 15
+            rightToLeftDiagonal += matrix[i][n-1-i]; // [0][2](ie,[3-1-0]) = 3, [1][1](ie,[3-1-1]) = 5, [2][0](ie,[3-1-2]) = 9 Total =17
         }
 
         return Math.abs(leftToRightDiagonal - rightToLeftDiagonal);
