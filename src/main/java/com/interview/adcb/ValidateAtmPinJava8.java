@@ -1,6 +1,6 @@
 package com.interview.adcb;
 
-public class validateAtmPinJava8
+public class ValidateAtmPinJava8
 {
     private static int validatePIN(String atmPin)
     {
